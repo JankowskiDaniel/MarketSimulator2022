@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectmarketsimulator2021_22.CompanyAddIndex">
+   <children>
+      <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchCompanyInfo" text="Back" />
+      <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="25.0" prefHeight="17.0" prefWidth="574.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="index" layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="198.6666717529297" text="Index" />
+        </columns>
+      </TableView>
+      <Button fx:id="addInx" layoutX="225.0" layoutY="307.0" mnemonicParsing="false" onAction="#addToIndexes" text="Add to selected index" />
+      <Label fx:id="msg" alignment="CENTER" contentDisplay="CENTER" layoutX="175.0" layoutY="344.0" prefHeight="17.0" prefWidth="260.0" />
+   </children>
+</AnchorPane>

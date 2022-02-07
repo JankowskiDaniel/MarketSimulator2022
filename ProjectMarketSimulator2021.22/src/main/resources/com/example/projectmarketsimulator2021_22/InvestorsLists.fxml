@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectmarketsimulator2021_22.InvestorsLists">
+   <children>
+      <TableView fx:id="table" layoutX="104.0" layoutY="74.0" prefHeight="252.0" prefWidth="391.0">
+        <columns>
+          <TableColumn fx:id="type" prefWidth="102.6666259765625" text="Type" />
+          <TableColumn fx:id="name" prefWidth="141.33331298828125" text="(Manager) Name" />
+            <TableColumn fx:id="lastname" minWidth="0.0" prefWidth="146.66668701171875" text="(Manager) Last name" />
+        </columns>
+      </TableView>
+      <Button layoutX="104.0" layoutY="338.0" mnemonicParsing="false" onAction="#switchInvestorInfo" text="Show information about selected investor" />
+      <Button layoutX="444.0" layoutY="338.0" mnemonicParsing="false" onAction="#switchMain" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectmarketsimulator2021_22.CompanyInfo">
+   <children>
+      <Button layoutX="526.0" layoutY="354.0" mnemonicParsing="false" onAction="#switchCompaniesLists" text="Back" />
+      <Label fx:id="name" alignment="CENTER" layoutX="14.0" layoutY="27.0" prefHeight="17.0" prefWidth="569.0" visible="false">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="nocompanymsg" layoutX="241.0" layoutY="191.0" text="No company selected." visible="false" />
+      <LineChart fx:id="chart" layoutX="189.0" layoutY="76.0" prefHeight="263.0" prefWidth="377.0" title="Stock prices" visible="false">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label fx:id="market" layoutX="22.0" layoutY="115.0" prefHeight="17.0" prefWidth="167.0" text="Market:" visible="false" />
+      <Label fx:id="idate" layoutX="22.0" layoutY="144.0" prefHeight="17.0" prefWidth="167.0" text="IPO Date:" visible="false" />
+      <Label fx:id="ivalue" layoutX="22.0" layoutY="174.0" prefHeight="17.0" prefWidth="167.0" text="IPO share value" visible="false" />
+      <Label fx:id="oprice" layoutX="22.0" layoutY="200.0" prefHeight="17.0" prefWidth="167.0" text="Openning price:" visible="false" />
+      <Label fx:id="acprice" layoutX="22.0" layoutY="229.0" prefHeight="17.0" prefWidth="167.0" text="Current price:" visible="false" />
+      <Label fx:id="capital" layoutX="22.0" layoutY="257.0" prefHeight="17.0" prefWidth="167.0" text="Minimal price:" visible="false" />
+      <Label fx:id="avshares" layoutX="22.0" layoutY="282.0" prefHeight="17.0" prefWidth="167.0" text="Maximal price:" visible="false" />
+      <Button fx:id="buyout" layoutX="190.0" layoutY="354.0" mnemonicParsing="false" onAction="#switchBuyout" text="Force a buy out" visible="false" />
+      <Button fx:id="addindx" layoutX="319.0" layoutY="354.0" mnemonicParsing="false" onAction="#switchAddIndex" text="Add to index" visible="false" />
+   </children>
+</AnchorPane>

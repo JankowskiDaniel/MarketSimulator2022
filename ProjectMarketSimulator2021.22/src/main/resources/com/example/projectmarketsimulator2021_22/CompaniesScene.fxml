@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectmarketsimulator2021_22.CompaniesScene">
+    <children>
+        <Label layoutX="161.0" layoutY="36.0" text="Create Company">
+            <font>
+                <Font name="Calibri" size="41.0" />
+            </font>
+        </Label>
+        <TextField fx:id="primitiveName" layoutX="224.0" layoutY="244.0" promptText="Enter name of the company:" />
+        <Button layoutX="512.0" layoutY="342.0" mnemonicParsing="false" onAction="#switchPanel" text="Back" userData="Settings.fxml" />
+        <ComboBox fx:id="markets" layoutX="222.0" layoutY="141.0" prefWidth="150.0" promptText="Select stock market*" />
+        <Button fx:id="indexSubBut" layoutX="248.0" layoutY="298.0" mnemonicParsing="false" onAction="#createCompany" text="Create company" />
+        <Label fx:id="indexCreateMsg" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="324.0" prefHeight="17.0" prefWidth="253.0" />
+      <Label fx:id="validmsg" layoutX="238.0" layoutY="269.0" prefHeight="17.0" prefWidth="124.0" />
+    </children>
+</AnchorPane>

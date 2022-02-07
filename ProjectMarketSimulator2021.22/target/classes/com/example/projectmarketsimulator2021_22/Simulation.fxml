@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectmarketsimulator2021_22.Simulation">
+   <children>
+      <Button fx:id="start" layoutX="197.0" layoutY="130.0" mnemonicParsing="false" onAction="#start" prefHeight="140.0" prefWidth="206.0" text="START" textFill="#3d8812">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font></Button>
+      <Button fx:id="stop" layoutX="197.0" layoutY="130.0" mnemonicParsing="false" onAction="#stop" prefHeight="140.0" prefWidth="206.0" text="STOP" textFill="#cc3232" visible="false">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font></Button>
+      <Button layoutX="534.0" layoutY="348.0" mnemonicParsing="false" onAction="#switchMain" text="Back" />
+   </children>
+</AnchorPane>

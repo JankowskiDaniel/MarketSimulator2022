@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectmarketsimulator2021_22.AssetsScene">
+   <children>
+      <ComboBox fx:id="assets" layoutX="225.0" layoutY="114.0" onAction="#loadMarketsAssets" prefWidth="150.0" promptText="Choose type of asset" />
+      <ComboBox fx:id="markets" layoutX="225.0" layoutY="166.0" prefWidth="150.0" promptText="Choose market" />
+      <TextField fx:id="primitiveName" layoutX="68.0" layoutY="212.0" promptText="Enter name of the asset:" />
+      <Button layoutX="516.0" layoutY="347.0" mnemonicParsing="false" onAction="#switchPanel" text="Back" userData="Settings.fxml" />
+      <Button layoutX="259.0" layoutY="264.0" mnemonicParsing="false" onAction="#createAsset" text="Create Asset" />
+      <Label fx:id="validmsg" alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="238.0" prefHeight="17.0" prefWidth="166.0" />
+      <TextField fx:id="shortname" layoutX="384.0" layoutY="212.0" prefHeight="25.0" prefWidth="149.0" promptText="Enter unit or symbol:" />
+   </children>
+</AnchorPane>

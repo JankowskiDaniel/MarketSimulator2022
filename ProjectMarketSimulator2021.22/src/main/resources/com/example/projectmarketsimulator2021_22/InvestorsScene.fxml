@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectmarketsimulator2021_22.InvestorsScene">
+   <children>
+      <ComboBox fx:id="investorTypeCombo" layoutX="226.0" layoutY="75.0" onAction="#loadFund" prefWidth="150.0" promptText="Choose type of the investor" />
+      <TextField fx:id="primitiveName" layoutX="75.0" layoutY="135.0" promptText="Enter first name" />
+      <Button layoutX="275.0" layoutY="278.0" mnemonicParsing="false" onAction="#createInvestor" text="Create" />
+      <Button layoutX="523.0" layoutY="351.0" mnemonicParsing="false" onAction="#switchPanel" text="Back" />
+      <Label fx:id="validmsg" alignment="CENTER" contentDisplay="CENTER" layoutX="220.0" layoutY="251.0" prefHeight="17.0" prefWidth="161.0" />
+      <TextField fx:id="lastname" layoutX="373.0" layoutY="135.0" promptText="Enter last name" />
+      <TextField fx:id="fundname" layoutX="226.0" layoutY="209.0" promptText="Enter name of the fund" visible="false" />
+      <Label fx:id="fundinf" alignment="CENTER" layoutX="88.0" layoutY="110.0" prefHeight="17.0" prefWidth="424.0" text="In case of fund, in field first name and last name provide fund's manager data." visible="false">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

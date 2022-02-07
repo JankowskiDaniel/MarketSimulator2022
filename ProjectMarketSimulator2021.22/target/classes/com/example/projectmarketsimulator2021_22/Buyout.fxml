@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectmarketsimulator2021_22.Buyout">
+   <children>
+      <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchCompanyInfo" text="Back" />
+      <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="34.0" prefHeight="30.0" prefWidth="538.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="valueshares" layoutX="226.0" layoutY="144.0" promptText="Enter number of shares" />
+      <Button fx:id="submit" layoutX="274.0" layoutY="200.0" mnemonicParsing="false" onAction="#validateField" text="Submit" />
+      <Label fx:id="msg" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="240.0" prefHeight="17.0" prefWidth="149.0" textAlignment="CENTER" />
+      <Label fx:id="av_shares" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="169.0" prefHeight="17.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>

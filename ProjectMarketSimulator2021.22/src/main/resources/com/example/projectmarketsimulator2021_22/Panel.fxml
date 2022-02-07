@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectmarketsimulator2021_22.Panel">
+   <children>
+      <Button layoutX="38.0" layoutY="104.0" mnemonicParsing="false" onAction="#switchMarketsScene" text="Create Market" userData="MarketsScene.fxml" />
+      <Button layoutX="533.0" layoutY="351.0" mnemonicParsing="false" onAction="#switchMain" text="Back" userData="MainScene.fxml" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="26.0" prefHeight="53.0" prefWidth="269.0" text="SETTINGS" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="165.0" layoutY="104.0" mnemonicParsing="false" onAction="#switchIndexesScene" text="Create Index" userData="IndexesScene.fxml" />
+      <Button layoutX="280.0" layoutY="104.0" mnemonicParsing="false" onAction="#switchCompaniesScene" text="Create Company" userData="CompaniesScene.fxml" />
+      <Button layoutX="418.0" layoutY="104.0" mnemonicParsing="false" onAction="#switchAssetsScene" text="Create Asset" userData="AssetsScene.fxml" />
+      <Button layoutX="38.0" layoutY="200.0" mnemonicParsing="false" onAction="#switchInvestorsScene" text="Create an investor" />
+      <Slider fx:id="speed" blockIncrement="25.0" layoutX="38.0" layoutY="280.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Label layoutX="45.0" layoutY="262.0" text="Speed of the simulation" />
+      <Button layoutX="88.0" layoutY="317.0" mnemonicParsing="false" onAction="#setSpeed" text="Save" />
+      <Label fx:id="warningspeed" layoutX="24.0" layoutY="344.0" text="To save changes you need to restaert the simulation!" visible="false">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
